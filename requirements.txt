@@ -1,0 +1,6 @@
+Django==1.9.8
+django-otp==0.3.5
+django-otp-yubikey==0.3.3
+pycrypto==2.6.1
+six==1.10.0
+YubiOTP==0.2.1

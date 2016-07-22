@@ -33,4 +33,10 @@ Then create a device for your user using one of the published [test vectors](htt
 b'cccccccb'  # note the modhex encoded public id of the primary key (1)
 ```
 
-You should now be able to log in to http://127.0.0.1:8000/admin/login/ using user `admin`, password `password` and the OTP token `cccccccbdvgtiblfkbgturecfllberrvkinnctnn`
+For convenience you can just load the fixture data instead:
+
+```bash
+$ python manage.py loaddata initial_data.json
+```
+
+You should now be able to log in to http://127.0.0.1:8000/admin/login/ using user `admin`, password `admin123` and the OTP token `cccccccbdvgtiblfkbgturecfllberrvkinnctnn`

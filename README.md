@@ -1,6 +1,12 @@
 # Django Yubitest
 
-A proof-of-concept for using [Yubikey OTP](https://developers.yubico.com/OTP/OTPs_Explained.html) as a required method for logging into a Django application.
+A proof-of-concept for using [Yubikey OTP](https://developers.yubico.com/OTP/OTPs_Explained.html) as a required method for logging into a Django application. This example uses a locally-verified device, meaning the Yubikey device should be programmed via the Yubikey customization tool with well-known:
+
+ - 4 byte modhex public ID (YubiCloud usually requires 6 by default)
+ - 6 byte hex private ID
+ - 16 byte hex secret key
+
+Test vectors are used for demonstration purposes so no actual physical key is required.
 
 ## Usage
 
